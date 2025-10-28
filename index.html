@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualize</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="overflow-hidden">
+    <div class="w-full h-screen flex items-end flex-col justify-end">
+      <div class="w-full h-[20%] flex items-center justify-center gap-2">
+        <button
+          onclick="randomArr()"
+          class="border-2 border-black px-10 py-2 rounded-md"
+        >
+          Random
+        </button>
+
+        <button
+          onclick="sort()"
+          class="border-2 border-black px-10 py-2 rounded-md"
+        >
+          Sort
+        </button>
+        <input
+          id="lengthArray"
+          type="number"
+          class="border-2 border-black px-4 py-2 rounded-md w-32"
+          value="50"
+          placeholder="Length"
+        />
+      </div>
+      <div
+        id="root"
+        class="w-full h-[80%] flex items-end justify-center flex-wrap"
+      ></div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
