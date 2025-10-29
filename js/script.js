@@ -1,5 +1,5 @@
-import { beep, playDiceRoll } from "./audio.js";
-import { renderArr, complete } from "./render.js";
+import { playDiceRoll } from "./audio.js";
+import { renderArr } from "./render.js";
 import { bubbleSort } from "./sort-algo/bubble-sort.js";
 let lengthArray = 50;
 let inputLength = document.getElementById("lengthArray");
@@ -33,11 +33,12 @@ function randomArr() {
   webLoad = false;
 }
 
+// stopping a sort will just reload the site
 async function runSort(sort) {
   if (!isSorting) {
     isSorting = true;
     sortBtn.innerText = "Stop";
-    await sort(containerDiv, arr);
+    await sort(containerDiv, arr); // this is the main sorting algo
     isSorting = false;
     sortBtn.innerText = "Sort";
   } else {
