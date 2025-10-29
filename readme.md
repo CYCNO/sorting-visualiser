@@ -1,4 +1,5 @@
 ## Algo Sorting Visualizer
+![img](images/readme/ss.png)
 Yeah, do what it tells, it will visualize algorithm for sorting the array or list from decreasing to increasing order, All the sorting algorithms are created manually too, built in vanilla javascript, without any library.
 
 you can check out by yourself in any browser, here is the preview [link](https://cycno.is-a.dev/sorting-visualiser)
