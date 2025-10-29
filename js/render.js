@@ -36,7 +36,7 @@ export async function complete(containerDiv) {
   for (const div of divs) {
     div.classList.remove("bg-black");
     div.classList.add("bg-green-600");
-    beep(550, "square", 0.3);
+    beep("650", "triangle", 0.2, 0.2);
     await new Promise((res) => setTimeout(res, 10)); // every 10ms
   }
 }

@@ -9,28 +9,32 @@
   </head>
   <body class="overflow-hidden">
     <div class="w-full h-screen flex items-end flex-col justify-end">
-      <div class="w-full h-[20%] flex items-center justify-center gap-2">
-        <button
-          id="randomBtn"
-          class="border-2 border-black px-10 py-2 rounded-md"
-        >
-          Random
-        </button>
+      <div class="w-full h-[20%] flex flex-col items-center justify-center gap-2">
+        <h1 class="text-4xl font-mono font-bold text-green-500">ALGO SORT VISUALIZER</h1>
+        <div class="w-full flex items-center justify-center gap-2">
+          <button
+            id="randomBtn"
+            class="border-2 border-green-500 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition duration-500 ease-in-out"
+          >
+            <img src="images/dice.png" class="h-8 w-8">
+          </button>
 
-        <button
-          id="sortBtn"
-          class="border-2 border-black px-10 py-2 rounded-md"
-        >
-          Sort
-        </button>
-        <input
-          id="lengthArray"
-          type="number"
-          class="border-2 border-black px-4 py-2 rounded-md w-32"
-          value="50"
-          placeholder="Length"
-        />
+          <button
+            id="sortBtn"
+            class="border-2 border-green-500 px-10 py-2 rounded-md hover:bg-green-500 hover:text-white transition duration-500 ease-in-out"
+          >
+            Sort
+          </button>
+          <input
+            id="lengthArray"
+            type="number"
+            class="border-2 border-green-500 px-4 py-2 rounded-md w-20 focus:outline-none"
+            value="50"
+            placeholder="Length"
+          />
+        </div>
       </div>
+
       <div
         id="root"
         class="w-full h-[80%] flex items-end justify-center flex-wrap"

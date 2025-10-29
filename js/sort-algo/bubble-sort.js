@@ -8,10 +8,10 @@ export async function bubbleSort(containerDiv, arr) {
       if (arr[i] < arr[j]) {
         [arr[i], arr[j]] = [arr[j], arr[i]]; // switch the elem
         renderArr(containerDiv, arr, i, j); // than render it
-        await new Promise((res) => setTimeout(res, 10));
+        await new Promise((res) => setTimeout(res, 1));
       }
     }
-    beep(440, "sine", 0.5);
+    beep(440, "sine", 0.5, 0.01);
   }
   complete(containerDiv);
 }
